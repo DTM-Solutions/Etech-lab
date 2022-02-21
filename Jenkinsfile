@@ -4,7 +4,7 @@ pipeline{
 	stages{
 		stage('git-clone'){
 			steps{
-           checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-check', url: 'https://github.com/Etech-consulting-projects/Etech-lab']]])
+           checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/DTM-Solutions/Etech-lab.git']]])
 			}
 		}
 	}	
